@@ -1,0 +1,22 @@
+{
+  "streams": [
+    {
+      "title": "programmatic navigation one",
+      "description": "test of navigation one",
+      "userId": "109637058945054498692",
+      "id": 6
+    },
+    {
+      "title": "Oscar nominee for best animation of 2019",
+      "description": "Bao 2019",
+      "userId": "109637058945054498692",
+      "id": 9
+    },
+    {
+      "title": "new stream created after StreamForm made",
+      "description": "from StreamForm",
+      "userId": "109637058945054498692",
+      "id": 10
+    }
+  ]
+}
