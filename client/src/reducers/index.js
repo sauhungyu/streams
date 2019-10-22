@@ -1,12 +1,10 @@
 import { combineReducers} from "redux";
-import authReducer from "./authReducer";
 import { reducer as formReducer } from "redux-form";
-import streamReducer from "./streamReducer";
+import productReducer from "./productReducer";
 
 export default combineReducers({
-
-   oAuth : authReducer,
+   
    form : formReducer,
-   streams : streamReducer
+   products : productReducer
    
 });

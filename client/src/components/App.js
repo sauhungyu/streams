@@ -4,12 +4,15 @@ import history from "../history";
 // import a plain Router only required if custom history wanted
 import { Router, Route, Switch } from "react-router-dom";
 
-import StreamCreate from "./streams/StreamCreate";
-import StreamList from "./streams/StreamList";
-import StreamShow from "./streams/StreamShow";
-import StreamEdit from "./streams/StreamEdit";
-import StreamDelete from "./streams/StreamDelete";
-import Header from "./Header";
+
+import ProductList from "./products/ProductList";
+//import StreamShow from "./streams/StreamShow";
+import ProductEdit from "./products/ProductEdit";
+
+
+
+
+//import Header from "./Header";
 
 // Switch applies to exact route if even a variable match :id (=variable)
 // will no longer direct to two routes at the same time
@@ -25,14 +28,12 @@ const App = () => {
 
 <Router history = {history}>
 <div>
-     <Header />  
 
 <Switch>
-<Route path="/" exact component={StreamList} />
-<Route path="/streams/new" exact component={StreamCreate} />
-<Route path="/streams/edit/:id" exact component={StreamEdit} />
-<Route path="/streams/delete/:id" exact component={StreamDelete} />
-<Route path="/streams/:id" exact component={StreamShow} />
+<Route path="/" exact component={ProductList} />
+<Route path="/products/edit/:id" exact component={ProductEdit} />
+
+
 </Switch>
 
 </div>
